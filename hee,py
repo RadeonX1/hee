@@ -1,0 +1,51 @@
+import random
+score = 1
+while not score == "0":
+    print("Main Menu")
+    print(9 * "=")
+    print("""1. Input Number of Score
+2. Random Score and Check Grade
+3. Exit""")
+    choice = int(input("Enter Choice : "))
+    if 0 < choice <=3:
+        match choice:
+            case 1:
+                score = int(input("Enter number of score : "))
+            case 2:
+                print("Start Random Score ...")
+                print("Check Grade")
+                print(14 * "-")
+                print("|Grade| Total|")
+                print(14 * "-")
+                totalScore = 0
+                while not totalScore == score:
+                    limitRanScore = 0
+                    ranscore = random.randrange(0, ((score+1)-limitRanScore))
+                    A = ranscore
+                    limitRanScore += ranscore
+                    ranscore = random.randrange(0, ((score+1)-limitRanScore))
+                    B = ranscore
+                    limitRanScore += ranscore
+                    ranscore = random.randrange(0, ((score+1)-limitRanScore))
+                    C = ranscore
+                    limitRanScore += ranscore
+                    ranscore = random.randrange(0, ((score+1)-limitRanScore))
+                    D = ranscore
+                    limitRanScore += ranscore
+                    ranscore = random.randrange(0, ((score+1)-limitRanScore))
+                    F = ranscore
+                    totalScore = A + B + C + D + F
+                print(f"|{"A":4s} |{A:5d} |")
+                print(f"|{"B":4s} |{B:5d} |")
+                print(f"|{"C":4s} |{C:5d} |")
+                print(f"|{"D":4s} |{D:5d} |")
+                print(f"|{"F":4s} |{F:5d} |")
+                print(14 * "-")
+                print(f"|Total|{totalScore:5d} |")
+                print(14 * "-")
+            case 3:
+                print("Exit Program")
+                break
+    else:
+        print("Invalid choice, please try again.")
+        

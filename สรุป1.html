@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>สรุปเนื้อหา: เศรษฐศาสตร์ในชีวิตประจำวัน (แปลงเป็น HTML)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; --panel:#131a22; --soft:#1a2430; --text:#e6eef7; --muted:#9fb3c8; --acc:#3da9fc; --acc2:#90caf9; --ok:#3ddc97; --warn:#ffb703;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:"Noto Sans Thai", system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--text); background:linear-gradient(180deg, #0b0f14 0%, #0f1720 100%);}
+    header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(160%) blur(8px); background:rgba(11,15,20,.75); border-bottom:1px solid rgba(255,255,255,.06)}
+    .wrap{max-width:1100px; margin:0 auto; padding:18px 20px}
+    h1{font-size:clamp(24px,3.8vw,40px); margin:6px 0 4px; letter-spacing:.2px}
+    p.subtitle{color:var(--muted); margin:0 0 6px; font-size:14px}
+    main{display:grid; grid-template-columns:280px 1fr; gap:22px; padding:22px}
+    nav{position:sticky; top:78px; align-self:start; background:var(--panel); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:14px}
+    nav h3{margin:4px 0 10px; font-size:14px; color:var(--muted); text-transform:uppercase; letter-spacing:.8px}
+    nav a{display:block; padding:8px 10px; margin:2px 0; color:var(--text); text-decoration:none; border-radius:10px; transition:.2s}
+    nav a:hover{background:var(--soft)}
+    section{background:var(--panel); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:20px 22px; margin-bottom:16px}
+    section h2{margin:.2rem 0 1rem; font-size:clamp(18px,2.6vw,28px)}
+    h3{margin:1.2rem 0 .6rem}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+    .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+    .chip{display:inline-block; padding:4px 10px; border:1px solid rgba(255,255,255,.14); border-radius:999px; margin:4px 6px 0 0; font-size:12px; color:var(--acc2)}
+    ul{margin:.4rem 0 .8rem 1.1rem}
+    li{margin:.25rem 0}
+    .card{background:var(--soft); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:12px 14px}
+    .note{font-size:13px; color:var(--muted)}
+    .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background:#0c131b; border:1px solid rgba(255,255,255,.1); padding:2px 6px; border-radius:6px}
+    table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:14px; border:1px solid rgba(255,255,255,.08)}
+    th,td{padding:10px 12px; text-align:center}
+    thead th{background:#0f1822; color:var(--muted); font-weight:600}
+    tbody tr:nth-child(odd){background:#0e141c}
+    tbody tr:nth-child(even){background:#0f1620}
+    code{background:#0c131b; padding:2px 6px; border-radius:6px}
+    .pill{display:inline-flex; align-items:center; gap:8px; background:#0f1822; color:var(--muted); padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.08)}
+    footer{color:var(--muted); text-align:center; padding:30px 20px}
+    .ok{color:var(--ok)} .warn{color:var(--warn)} .acc{color:var(--acc)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>เศรษฐศาสตร์ในชีวิตประจำวัน — ฉบับ HTML</h1>
+      <p class="subtitle">สรุปจากเอกสาร PDF (ปรับรูปแบบให้อ่านง่าย, เพิ่มสารบัญ, ตาราง และบล็อกสรุป)</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav>
+      <h3>สารบัญ</h3>
+      <a href="#intro">บทนำ & คำถามชวนคิด</a>
+      <a href="#schools">นักเศรษฐศาสตร์สำคัญ</a>
+      <a href="#micro-macro">จุลภาค vs มหภาค</a>
+      <a href="#pos-norm">พรรณนา vs นโยบาย</a>
+      <a href="#methods">ระเบียบวิธีเศรษฐศาสตร์</a>
+      <a href="#market">กลไกราคา & อุปสงค์–อุปทาน</a>
+      <a href="#elasticity">ค่าความยืดหยุ่น</a>
+      <a href="#systems">ระบบเศรษฐกิจ & การไหลเวียน</a>
+      <a href="#consumer">พฤติกรรมผู้บริโภค & อรรถประโยชน์</a>
+      <a href="#budgeting">การวางแผนใช้จ่าย–ออม–ลงทุน</a>
+      <a href="#production">การผลิต ต้นทุน กำไร</a>
+    </nav>
+
+    <div>
+      <section id="intro">
+        <h2>บทนำ & คำถามชวนคิด</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>เมื่อพูดถึง “เศรษฐศาสตร์” คุณนึกถึงอะไร?</h3>
+            <ul>
+              <li>การบรรลุเป้าหมายในชีวิต / ใช้ชีวิตอย่างมีความหมาย</li>
+              <li>การสร้างสรรค์ผลงานที่มีคุณค่า ทำสิ่งที่ตนเองรัก</li>
+              <li class="note">รากศัพท์: <span class="kbd">oikos</span> = ครอบครัว, <span class="kbd">nemein</span> = การจัดการ → “การจัดการทรัพยากรในครอบครัว”</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>โจทย์ชวนคุย</h3>
+            <ul>
+              <li>เศรษฐศาสตร์เกี่ยวกับชีวิตประจำวันอย่างไร?</li>
+              <li>ปัญหาเศรษฐกิจสำคัญของไทยตอนนี้คืออะไร?</li>
+              <li>ถ้าได้ 20,000 บาทตอนนี้ จะซื้ออะไรเป็นอย่างแรก?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="schools">
+        <h2>นักเศรษฐศาสตร์สำคัญ (ย่อ)</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Adam Smith <span class="note">(1723–1790)</span></h3>
+            <ul>
+              <li>แนวคิด “มือที่มองไม่เห็น” ชี้นำการจัดสรรทรัพยากร</li>
+              <li>แบ่งงานเป็นขั้นตอนย่อย เพิ่มประสิทธิภาพและผลผลิต</li>
+              <li>สนับสนุนการแข่งขัน บทบาทรัฐจำกัด</li>
+              <li>การค้าเสรี ลดกำแพงภาษี</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>David Ricardo <span class="note">(1772–1823)</span></h3>
+            <ul>
+              <li>ความได้เปรียบเชิงเปรียบเทียบ (Comparative Advantage)</li>
+              <li>การสะสมทุนและการลงทุนเพิ่มผลิตภาพ</li>
+              <li>ทฤษฎีมูลค่าจากแรงงาน & การกระจายรายได้</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Alfred Marshall <span class="note">(1842–1924)</span></h3>
+            <ul>
+              <li>อุปสงค์–อุปทาน, ดุลยภาพตลาด, ความยืดหยุ่นต่อราคา</li>
+              <li>ต้นทุนระยะสั้น–ระยะยาว</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card" style="margin-top:10px">
+          <h3>John Maynard Keynes <span class="note">(1883–1946)</span></h3>
+          <ul>
+            <li>รัฐใช้จ่ายลงทุนสาธารณะกระตุ้นเศรษฐกิจยามถดถอย</li>
+            <li>ตำราเศรษฐศาสตร์ภาษาไทยเล่มแรก: “ทรัพยศาสตร์” (กล่าวถึงในเอกสาร)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="micro-macro">
+        <h2>จุลภาค vs มหภาค</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>ตัวอย่าง “จุลภาค”</h3>
+            <ul>
+              <li>บริษัทเพิ่มกำลังผลิตรองเท้า</li>
+              <li>นักศึกษาตัดสินใจเรียนต่อหรือทำงาน</li>
+              <li>เกษตรกรเลือกปลูกพืชผลตอบแทนสูงกว่า</li>
+              <li>ผู้บริโภคเลือกแบรนด์จากความเชื่อมั่นคุณภาพ</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>ตัวอย่าง “มหภาค”</h3>
+            <ul>
+              <li>รัฐลดภาษีกระตุ้นการใช้จ่าย</li>
+              <li>เงินเฟ้อสูงกระทบอำนาจซื้อทั้งประเทศ</li>
+              <li>ธนาคารกลางปรับขึ้นดอกเบี้ยนโยบาย</li>
+              <li>การท่องเที่ยวต่างชาติหดตัว กระทบรายได้ภาพรวม</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="pos-norm">
+        <h2>เศรษฐศาสตร์พรรณนา vs เศรษฐศาสตร์นโยบาย</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>พรรณนา (Positive)</h3>
+            <ul>
+              <li>ปรับ VAT 10% → 15% ทำให้การบริโภคลดลง 5% ใน 1 ปี</li>
+              <li>ลดดอกเบี้ย 5% → 3% เอื้อให้การลงทุนเอกชนเพิ่ม 10% ปีถัดไป</li>
+              <li>ขาดดุลการค้า: มูลค่านำเข้าสูงกว่าส่งออก</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>นโยบาย (Normative)</h3>
+            <ul>
+              <li>ควรเพิ่มภาษีผู้มีรายได้สูงเพื่อทุนการศึกษาฟรีเด็กยากจน</li>
+              <li>รัฐควรเพิ่มสวัสดิการสังคมเพื่อลดความยากจน</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="methods">
+        <h2>ระเบียบวิธีเศรษฐศาสตร์</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>นิรนัย (Deductive)</h3>
+            <p class="note">เริ่มจากทฤษฎี → ทดสอบกับกรณีเฉพาะ</p>
+            <ul>
+              <li>กฎอุปสงค์: ราคาเพิ่ม ปริมาณซื้อลด</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>อุปนัย (Inductive)</h3>
+            <p class="note">เริ่มจากข้อมูลเฉพาะ → สรุปเป็นหลักทั่วไป</p>
+            <ul>
+              <li>ราคาน้ำมันสูงขึ้น → คนหันใช้ขนส่งสาธารณะมากขึ้น</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>ประวัติศาสตร์ (Historical)</h3>
+            <ul>
+              <li>ศึกษาบริบทอดีตเพื่อปรับใช้ปัจจุบัน</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">ตัวอย่างงานวิจัย: ค่าแรงขั้นต่ำกับต้นทุน–การจ้างงาน, COVID-19 กับพฤติกรรมบริโภค</p>
+      </section>
+
+      <section id="market">
+        <h2>กลไกราคา & อุปสงค์–อุปทาน</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>อุปสงค์ (Demand)</h3>
+            <table>
+              <thead><tr><th>ราคา X (บาท/หน่วย)</th><th>ปริมาณ X (หน่วย/วัน)</th></tr></thead>
+              <tbody>
+                <tr><td>70</td><td>1</td></tr>
+                <tr><td>40</td><td>2</td></tr>
+                <tr><td>38</td><td>3</td></tr>
+                <tr><td>35</td><td>4</td></tr>
+                <tr><td>32</td><td>5</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <h3>อุปทาน (Supply)</h3>
+            <table>
+              <thead><tr><th>ราคา X (บาท/หน่วย)</tH><th>ปริมาณ X (หน่วย/วัน)</th></tr></thead>
+              <tbody>
+                <tr><td>70</td><td>5</td></tr>
+                <tr><td>60</td><td>4</td></tr>
+                <tr><td>50</td><td>3</td></tr>
+                <tr><td>40</td><td>2</td></tr>
+                <tr><td>30</td><td>1</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="note">ตัวอย่างปัจจัยเลื่อนเส้นอุปสงค์/อุปทาน: รายได้, รสนิยม, ภาษี, เทคโนโลยี, ต้นทุนปัจจัยการผลิต, ความคาดหวัง</p>
+      </section>
+
+      <section id="elasticity">
+        <h2>ค่าความยืดหยุ่น (Elasticity)</h2>
+        <p>นิยาม: วัด <span class="pill">%Δตัวแปรตาม / %Δตัวแปรต้น</span> จึง <b>ไม่มีหน่วย</b>. สื่อทั้งทิศทาง (+/−) และขนาด (ค่าสัมบูรณ์).</p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>จำแนกระดับ</h3>
+            <ul>
+              <li>0 = ไม่ยืดหยุ่น</li>
+              <li>0–1 = ยืดหยุ่นน้อย</li>
+              <li>≥ 1 = ยืดหยุ่นมาก</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>ตัวอย่างโจทย์</h3>
+            <ul>
+              <li>ราคาลด 10% ปริมาณซื้อลด/เพิ่มเท่าไร? → ใช้ความยืดหยุ่นราคา</li>
+              <li>ไขว้ +0.5: กาแฟ & ชาไข่มุก → <span class="ok">สินค้าทดแทน</span></li>
+              <li>ไขว้ −0.4: เครื่องซักผ้า & ผงซักฟอก → <span class="ok">สินค้าใช้ร่วม</span></li>
+              <li>รายได้ +1.5: รถหรู → <span class="ok">สินค้าปกติชนิดหรู</span></li>
+              <li>รายได้ −0.5: บะหมี่กึ่งฯ → <span class="warn">สินค้าด้อยคุณภาพ</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="systems">
+        <h2>ระบบเศรษฐกิจ & การไหลเวียน</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>สมาชิก & ปัจจัยการผลิต</h3>
+            <ul>
+              <li>Land → Rent</li>
+              <li>Labour → Wage</li>
+              <li>Capital → Interest</li>
+              <li>Entrepreneur → Profit</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>ประเภทระบบ</h3>
+            <ul>
+              <li>เสรีนิยม/ทุนนิยม (ตลาด)</li>
+              <li>สังคมนิยม (บังคับ)</li>
+              <li>ผสม</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">กลไกราคาใช้ตอบ: ผลิตอะไร, อย่างไร, เพื่อใคร</p>
+      </section>
+
+      <section id="consumer">
+        <h2>ผู้บริโภค & อรรถประโยชน์</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>แนวคิดหลัก</h3>
+            <ul>
+              <li>อรรถประโยชน์รวม (TU) & ส่วนเพิ่ม (MU)</li>
+              <li>กฎการลดน้อยถอยลงของ MU</li>
+              <li>เลือกซื้อให้ <b>MU/P</b> เท่ากันทุกสินค้า ภายใต้งบจำกัด</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>ตัวอย่างตาราง MU</h3>
+            <table>
+              <thead><tr><th>จำนวนส้ม</th><th>MU</th><th>TU</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td>12</td><td>12</td></tr>
+                <tr><td>2</td><td>9</td><td>21</td></tr>
+                <tr><td>3</td><td>5</td><td>26</td></tr>
+                <tr><td>4</td><td>1</td><td>27</td></tr>
+                <tr><td>5</td><td>0</td><td>27</td></tr>
+                <tr><td>6</td><td>-4</td><td>23</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="budgeting">
+        <h2>การวางแผนใช้จ่าย–ออม–ลงทุน</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>สมการพื้นฐาน</h3>
+            <ul>
+              <li>Y = C + S</li>
+              <li>S = Y − C</li>
+              <li>ฟังก์ชันบริโภค: C = a + bY</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>การออม & การลงทุน</h3>
+            <ul>
+              <li>วิธีออม: ฝากธนาคาร, สลากออมสิน/ออมทรัพย์, ประกัน, ทองคำ/ที่ดิน</li>
+              <li>ตลาดการเงินไทย: ตลาดเงิน, ตลาดทุน, ตลาดตราสารหนี้, อนุพันธ์, FX</li>
+              <li>ตราสารหนี้ vs ตราสารทุน, ผลตอบแทน & ความเสี่ยง</li>
+              <li>กระจายความเสี่ยง, เลือกตามเป้าหมายและรับความเสี่ยงได้</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="production">
+        <h2>การผลิต ต้นทุน กำไร</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>ต้นทุน</h3>
+            <ul>
+              <li>ชัดแจ้ง (Explicit) vs แฝง (Implicit)</li>
+              <li>เศรษฐศาสตร์ vs บัญชี</li>
+              <li>คงที่ (FC) vs แปรผัน (VC)</li>
+              <li>ค่าเสียโอกาส (Opportunity Cost)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>กำไรสูงสุด</h3>
+            <ul>
+              <li>π = TR − TC</li>
+              <li>เงื่อนไขที่เหมาะสม: <b>MR = MC</b></li>
+              <li>ประหยัดต่อขนาด (Economies of Scale)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>หมายเหตุการใช้งาน</h2>
+        <p class="note">หน้านี้เป็นการ “สรุป & จัดรูปแบบ” จากเอกสารต้นฉบับ เพื่ออ่านบนเว็บได้สะดวกขึ้น พร้อมตัวอย่างตาราง/หัวข้อหลัก. หากต้องการแปลงเต็มทุกหน้าแบบ 1:1 (รวมภาพ/กราฟทั้งหมด) โปรดแจ้งได้เลย</p>
+      </section>
+
+      <footer>
+        <p>© แปลงเป็น HTML เพื่อการศึกษา</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
